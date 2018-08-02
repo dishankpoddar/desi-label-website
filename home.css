@@ -1,0 +1,48 @@
+.picbox{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 'season season'
+						 'kurtis bottoms'
+						 'accessories homedecor';
+	padding: 5px 10px;	
+	cursor: pointer;
+}
+.picholder1{
+	grid-area: season;
+	padding: 5px 10px;
+	text-align: center;
+}
+.picholder2{
+	grid-area: kurtis;
+	padding: 5px 10px;
+	text-align: center;
+}
+.picholder3{
+	grid-area: bottoms;
+	padding: 5px 10px;
+	text-align: center;
+}
+.picholder4{
+	grid-area: accessories;
+	padding: 5px 10px;
+	text-align: center;
+}
+.picholder5{
+	grid-area: homedecor;
+	padding: 5px 10px;
+	text-align: center;
+}
+.picitem{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+.picitem:hover{
+	opacity: 0.6;	
+}
+.centeredtext{
+	position: relative;
+	bottom: 50%;
+	font-size: 50px;
+}
