@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Alegreya Sans SC'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<style type="text/css">
+		body {
+			width: 100%;
+			overflow-x: hidden;
+		    font-family: 'Alegreya Sans SC';
+		}
+		@media screen and (max-height: 50px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		  .sidenav {width: 40%}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="top" href="#">The Desi Label</div>
+		<span id="mysidenav" class="sidenav" onkeypress="identifyEscKeyPressedEvent()">
+			<img src="avatar.png" alt="avatar" class="avatar">
+			<br>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<button onclick="" style="width:auto;" class="sidenavlogin">Login</button>
+			<button onclick="" style="width:auto;" class="sidenavsignup">Signup</button>
+			<a href="#">Category 1</a>
+		  <a href="#">Category n</a>
+		  <a href="#">My Account</a>
+		  <a href="#">My Bag</a>
+		  <a href="#">Contact Us</a>
+		</span>
+		<div id="second">
+			<span onclick="openNav()" id='navb'>&#9776;</span>
+			<a href="#" class="fa fa-phone"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-facebook"></a>
+		</div>
+		<div class="bodycontent">
+			
+		</div>
+		<div id="footer">
+			<span>
+				<p>example1<br>example2<br>example3<br>example4<br>example5</p>
+			</span>
+			<span>
+				<p>example1<br>example2<br>example3<br>example4<br>example5</p>
+			</span>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function openNav() {
+	    	document.getElementById("mysidenav").style.width = "20%";
+		}
+
+		function closeNav() {
+		    document.getElementById("mysidenav").style.width = "0";
+		}
+	</script>
+	<script type="text/javascript">
+		var nav = document.getElementById('mysidenav');
+		window.onclick = function(event) {
+		    if (event.target != nav && event.target != document.getElementById('navb')) {
+		        nav.style.width = "0";
+		    }
+		}
+	</script>
+	<script type="text/javascript">
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("second");
+		var sticky = navbar.offsetTop;
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("stickynav")
+		  } else {
+		    navbar.classList.remove("stickynav");
+		  }
+		}
+	</script>
+</body>
+</html>

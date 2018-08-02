@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Alegreya Sans SC'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<style type="text/css">
+		body {
+			width: 100%;
+			overflow-x: hidden;
+		    font-family: 'Alegreya Sans SC';
+		}
+		.picbox{
+			width: 100%;
+			display: grid;
+			grid-template-columns: 50% 50%;
+			grid-template-areas: 'season season'
+								 'kurtis bottoms'
+								 'accessories homedecor';
+			padding: 5px 10px;	
+			cursor: pointer;
+		}
+		.picholder1{
+			grid-area: season;
+			padding: 5px 10px;
+			text-align: center;
+		}
+		.picholder2{
+			grid-area: kurtis;
+			padding: 5px 10px;
+			text-align: center;
+		}
+		.picholder3{
+			grid-area: bottoms;
+			padding: 5px 10px;
+			text-align: center;
+		}
+		.picholder4{
+			grid-area: accessories;
+			padding: 5px 10px;
+			text-align: center;
+		}
+		.picholder5{
+			grid-area: homedecor;
+			padding: 5px 10px;
+			text-align: center;
+		}
+		.picitem{
+			width: 100%;
+			height: 100%;
+			opacity: 1;
+		}
+		.picitem:hover{
+			opacity: 0.6;	
+		}
+		.centeredtext{
+			position: relative;
+			bottom: 50%;
+			font-size: 50px;
+		}
+		@media screen and (max-height: 50px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		  .sidenav {width: 40%}
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="top" href="#">The Desi Label</div>
+		<span id="mysidenav" class="sidenav" onkeypress="identifyEscKeyPressedEvent()">
+			<img src="avatar.png" alt="avatar" class="avatar">
+			<br>
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<button onclick="" style="width:auto;" class="sidenavlogin">Login</button>
+			<button onclick="" style="width:auto;" class="sidenavsignup">Signup</button>
+			<a href="#">Category 1</a>
+		  <a href="#">Category n</a>
+		  <a href="#">My Account</a>
+		  <a href="#">My Bag</a>
+		  <a href="#">Contact Us</a>
+		</span>
+		<div id="second">
+			<span onclick="openNav()" id='navb'>&#9776;</span>
+			<a href="#" class="fa fa-phone"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-facebook"></a>
+		</div>
+		<div class="bodycontent">
+			<div class="picbox">
+				<div class="picholder1">
+					<img src="13.png" alt="seasonal" class="picitem">
+					<div class="centeredtext" id="test">Seasonal</div>
+				</div>
+				<div class="picholder2" align="center">
+					<img src="3.jpg" alt="kurtis" class="picitem">
+					<div class="centeredtext">Kurtis</div>
+				</div>
+				<div class="picholder3" align="center">
+					<img src="3.jpg" alt="bottoms" class="picitem">
+					<div class="centeredtext">Bottoms</div>
+				</div>
+				<div class="picholder4" align="center">
+					<img src="3.jpg" alt="accessories" class="picitem">
+					<div class="centeredtext">Accessories</div>
+				</div>
+				<div class="picholder5" align="center">
+					<img src="3.jpg" alt="home decor" class="picitem">
+					<div class="centeredtext">Home Decor</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<span style="width: 50%">
+				<p>example1<br>example2<br>example3<br>example4<br>example5</p>
+			</span>
+			<span style="width: 50%">
+				<p>example1<br>example2<br>example3<br>example4<br>example5</p>
+			</span>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function openNav() {
+	    	document.getElementById("mysidenav").style.width = "20%";
+		}
+
+		function closeNav() {
+		    document.getElementById("mysidenav").style.width = "0";
+		}
+	</script>
+	<script type="text/javascript">
+		var nav = document.getElementById('mysidenav');
+		window.onclick = function(event) {
+		    if (event.target != nav && event.target != document.getElementById('navb')) {
+		        nav.style.width = "0";
+		    }
+		}
+	</script>
+	<script type="text/javascript">
+		window.onscroll = function() {myFunction()};
+		var navbar = document.getElementById("second");
+		var sticky = navbar.offsetTop;
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("stickynav")
+		  } else {
+		    navbar.classList.remove("stickynav");
+		  }
+		}
+	</script>
+</body>
+</html>
