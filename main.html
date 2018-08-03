@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Alegreya Sans SC'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="home.css">
 	<style type="text/css">
 		body {
 			width: 100%;
@@ -19,57 +20,73 @@
 </head>
 <body>
 	<div id="container">
-		<div class="top" href="#">The Desi Label</div>
+		<div class="top"><a href="main.html">The Desi Label</a></div>
 		<span id="mysidenav" class="sidenav" onkeypress="identifyEscKeyPressedEvent()">
 			<img src="avatar.png" alt="avatar" class="avatar">
 			<br>
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<a href="#" style="display: none;">Full Name</a>
 			<button onclick="" style="width:auto;" class="sidenavlogin">Login</button>
 			<button onclick="" style="width:auto;" class="sidenavsignup">Signup</button>
-			<a href="#">Category 1</a>
-		  <a href="#">Category n</a>
-		  <a href="#">My Account</a>
-		  <a href="#">My Bag</a>
-		  <a href="#">Contact Us</a>
+			<br><br>
+			<a href="#">Kurtis</a>
+			<a href="#">Bottoms</a>
+			<a href="#">Accessories</a>
+			<a href="#">Home Decor</a>
+			<a href="#">Seasonal</a>
+			<br>
+			<a href="#">My Account</a>
+			<a href="#">My Bag</a>
+			<a href="contact.html">Contact Us</a>
 		</span>
 		<div id="second">
 			<span onclick="openNav()" id='navb'>&#9776;</span>
-			<a href="#" class="fa fa-phone"></a>
+			<a href="contact.html" class="fa fa-phone"></a>
 			<a href="#" class="fa fa-instagram"></a>
 			<a href="#" class="fa fa-facebook"></a>
 		</div>
 		<div class="bodycontent">
 			<div class="picbox">
 				<div class="picholder1">
-					<img src="13.png" alt="seasonal" class="picitem">
-					<div class="centeredtext" id="test">Seasonal</div>
+					<a href="#">
+						<img src="13.png" alt="seasonal" class="picitem">
+						<a class="centeredtext" href="#">Seasonal</a>
+					</a>
 				</div>
 				<div class="picholder2" align="center">
-					<img src="3.jpg" alt="kurtis" class="picitem">
-					<div class="centeredtext">Kurtis</div>
+					<a href="#">
+						<img src="3.jpg" alt="kurtis" class="picitem">
+						<a class="centeredtext" href="#">Kurtis</a>
+					</a>
 				</div>
 				<div class="picholder3" align="center">
-					<img src="3.jpg" alt="bottoms" class="picitem">
-					<div class="centeredtext">Bottoms</div>
+					<a href="#">
+						<img src="3.jpg" alt="bottoms" class="picitem">
+						<a class="centeredtext" href="#">Bottoms</a>
+					</a>
 				</div>
 				<div class="picholder4" align="center">
-					<img src="3.jpg" alt="accessories" class="picitem">
-					<div class="centeredtext">Accessories</div>
+					<a href="#">
+						<img src="3.jpg" alt="accessories" class="picitem">
+						<a class="centeredtext" href="#">Accessories</a>
+					</a>
 				</div>
 				<div class="picholder5" align="center">
-					<img src="3.jpg" alt="home decor" class="picitem">
-					<div class="centeredtext">Home Decor</div>
+					<a href="#">
+						<img src="3.jpg" alt="home decor" class="picitem">
+						<a class="centeredtext" href="#">Home Decor</a>
+					</a>
 				</div>
 			</div>
 		</div>
 		<div id="footer">
-			<span style="width: 50%">
+			<span style="text-align: center;grid-area: a;">
 				<p>example1<br>example2<br>example3<br>example4<br>example5</p>
 			</span>
-			<span style="width: 50%">
+			<span style="text-align: center;grid-area: b;">
 				<p>example1<br>example2<br>example3<br>example4<br>example5</p>
 			</span>
-			<span style="width: 100%">
+			<span style="text-align: center;grid-area: c;" >
 				<p>example1<br>example2<br>example3<br>example4<br>example5</p>
 			</span>
 		</div>

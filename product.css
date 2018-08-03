@@ -1,0 +1,137 @@
+		
+		.button {
+		    background-color: #4CAF50;
+		    color: white;
+		    padding: 14px 0px;
+		    margin: 8px 0 8px 0;
+		    border: none;
+		    cursor: pointer;
+		    
+		}
+		.image_div
+		{
+			width : 500px;
+			position: static;
+			margin : 30px 0 50px 0;
+			border-style : none;
+			
+		}
+		
+		.product_descr
+		{
+			margin : 18px 0 50px 0;
+			border-style : none;
+			padding : 0 5%;
+			font-size : 20px;
+			
+		}
+		
+		.product_image
+		{
+			padding : 5% 5%;
+			width : 450px;
+			height : 600px;
+			border-radius: 12%;
+		}
+			
+		.grid-container 
+		{
+			
+			width : 100%;
+			grid-gap : 50px;
+			display : grid;
+			grid-template-columns: repeat( auto-fit, minmax(500px, 1fr) );
+		}
+		.grid-container2 
+		{
+			padding : ;
+			width : 100%;
+			grid-gap : 25px;
+			display : grid;
+			grid-template-columns: auto auto;
+		}
+		.grid-container3 
+		{
+			
+			width : 50%;
+			grid-gap : 10px;
+			display : grid;
+			grid-template-columns: auto auto auto auto auto;
+			font-size : 13px;
+			
+		}
+		
+		.grid-container3 > div
+		{
+			border: 1px solid gray;
+			text-align: center;
+			color : gray;
+		}
+		
+		.grid-container3 > div:hover
+		{
+		border: 1px solid green;
+		text-align: center;
+		color:green;	
+		}
+		.collapsible {
+		  color: black;
+		  cursor: pointer;
+		  padding: 0;
+		  width: 100%;
+		  border: none;
+		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+		}
+		
+		.collapsible2 {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
+		
+		.xyz {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+		}
+		
+		.content3 {
+		display :none;
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		}
+		
+		.content2 {
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		}
+		
+		.content {
+		background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		
+		}
+		
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
