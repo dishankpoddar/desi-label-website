@@ -2,8 +2,16 @@
 	width: 80%;
 	height: 100%;
 	margin: auto;
+}		
+.page_navigation a:link{
+	font-size : 15px;
+	color : gray;
+	text-decoration : none;
 }
-
+.page_navigation a:hover{
+	color : green;
+	text-decoration : underline;
+}
 button {
     background-color: #4CAF50;
     color: white;
@@ -71,6 +79,11 @@ button:hover {
 	font-size: 50px;
 	cursor: pointer;
 }
+.top a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
 #second{
 	width: 100%;
 	background: black;
@@ -89,10 +102,7 @@ button:hover {
 	top: 0;
 	z-index: 99;
 }
-.stickynav+.bodycontent{
-	padding-top: 60px;
-}
-.fa {
+#second .fa {
 	float: right;
 	font-size: 30px;
 	width: 50px;
@@ -101,8 +111,7 @@ button:hover {
 	margin: 15px 2px;
 	color:white;
 }
-
-.fa:hover {
+#second .fa:hover {
 	opacity: 0.7;
 }
 #navb{
@@ -111,6 +120,9 @@ button:hover {
 	text-decoration: none;
 	margin: 10px 2px;
 	color:white;
+}
+#navb:hover{
+	opacity: 0.7;
 }
 .avatar{
     vertical-align: middle;
@@ -131,4 +143,5 @@ button:hover {
 	border-style: solid;
 	display: grid;
 	grid-template-columns: auto auto;	
+	grid-template-areas: 'a b' 'c c'
 }
